@@ -141,7 +141,8 @@ const TenantManagement: React.FC<TenantManagementProps> = ({
             <thead>
               <tr className="border-b border-neutral-100">
                 <th className="text-left py-3 px-4 font-medium text-neutral-700">Tenant Adı</th>
-                <th className="text-left py-3 px-4 font-medium text-neutral-700">Şube Sayısı</th>
+                <th className="text-left py-3 px-4 font-medium text-neutral-700">Şirket Kodu</th>
+                <th className="text-left py-3 px-4 font-medium text-neutral-700">Lisans Sayısı</th>
                 <th className="text-left py-3 px-4 font-medium text-neutral-700">Durum</th>
                 <th className="text-left py-3 px-4 font-medium text-neutral-700">İşlemler</th>
               </tr>
@@ -156,7 +157,10 @@ const TenantManagement: React.FC<TenantManagementProps> = ({
                     </div>
                   </td>
                   <td className="py-3 px-4 text-neutral-600">
-                    {tenant.branches.length} şube
+                    {tenant.code} 
+                  </td>
+                  <td className="py-3 px-4 text-neutral-600">
+                    {tenant.licenseCount} lisans
                   </td>
                   <td className="py-3 px-4">
                     <span className={`px-2 py-1 rounded-full text-xs ${

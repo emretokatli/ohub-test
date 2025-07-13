@@ -34,8 +34,8 @@ const UserManagement: React.FC = () => {
             </div>
             <select className="input-field">
               <option>Tüm Tenant'lar</option>
-              <option>ACME Corporation</option>
-              <option>XYZ Group</option>
+              <option>Simpra Software GmbH</option>
+              <option>Protel</option>
             </select>
           </div>
         </div>

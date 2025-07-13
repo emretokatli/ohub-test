@@ -85,7 +85,7 @@ const Content: React.FC<ContentProps> = ({
                 <button
                   className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
                     activeProductTab === 'branch-settings'
-                      ? 'bg-neutral-25 text-neutral-900 shadow-sm'
+                      ? 'bg-neutral-25 text-neutral-900 shadow-sm underline'
                       : 'text-neutral-600 hover:text-neutral-900'
                   }`}
                   onClick={() => setActiveProductTab('branch-settings')}
@@ -95,7 +95,7 @@ const Content: React.FC<ContentProps> = ({
                 <button
                   className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
                     activeProductTab === 'rvc-settings'
-                      ? 'bg-neutral-25 text-neutral-900 shadow-sm'
+                      ? 'bg-neutral-25 text-neutral-900 shadow-sm  underline'
                       : 'text-neutral-600 hover:text-neutral-900'
                   }`}
                   onClick={() => setActiveProductTab('rvc-settings')}

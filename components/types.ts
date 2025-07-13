@@ -16,7 +16,9 @@ export interface Tenant {
   name: string;
   apiKey: string;
   apiSecret: string;
+  licenseCount: number;
   status: 'active' | 'inactive' | 'pending';
+  code: string;
   branches: Branch[];
   licenses: License[];
 }

@@ -91,12 +91,9 @@ const Sidebar: React.FC<SidebarProps> = ({
 
   const mainMenuItems: MenuItem[] = [
     {
-      key: 'accounts',
-      label: 'Hesaplar (Tenants)',
-      icon: Building2,
-      children: [
-        { key: 'tenant-list', label: 'Tenant Listesi', icon: FileText }
-      ]
+      key: 'tenant-list',
+      label: 'Hesaplar',
+      icon: Building2
     },
     {
       key: 'waiterapp',

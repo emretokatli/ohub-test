@@ -26,58 +26,58 @@ const ProductConfig: React.FC<ProductConfigProps> = ({
     <div className="space-y-6">
       <div className="flex justify-between items-center">
         <div>
-          <h2 className="text-2xl font-bold text-gray-900">WAITERAPP - Ödeme Ayarları</h2>
-          <p className="text-sm text-gray-600">
+          <h2 className="text-2xl font-bold text-neutral-900">WAITERAPP - Ödeme Ayarları</h2>
+          <p className="text-sm text-neutral-600">
             {getCurrentTenant(selectedTenant)?.name} {'>'} {getCurrentBranch(selectedTenant, selectedBranch)?.name} (Location Based)
           </p>
         </div>
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+        <button className="btn-primary">
           <Save size={16} className="mr-2 inline" />
           Ayarları Kaydet
         </button>
       </div>
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div className="bg-white p-6 rounded-lg shadow-sm border">
-          <h3 className="text-lg font-medium text-gray-900 mb-4">Entegrasyon Ayarları</h3>
+        <div className="bg-neutral-25 p-6 rounded-lg shadow-sm border border-neutral-100">
+          <h3 className="text-lg font-medium text-neutral-900 mb-4">Entegrasyon Ayarları</h3>
           <div className="space-y-4">
             <div className="flex items-center justify-between">
-              <label className="text-sm font-medium text-gray-700">Opera PMS</label>
-              <input type="checkbox" className="rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
+              <label className="text-sm font-medium text-neutral-700">Opera PMS</label>
+              <input type="checkbox" className="rounded border-neutral-200 text-primary-base focus:ring-primary-base" />
             </div>
             <div className="flex items-center justify-between">
-              <label className="text-sm font-medium text-gray-700">GMU</label>
-              <input type="checkbox" className="rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
+              <label className="text-sm font-medium text-neutral-700">GMU</label>
+              <input type="checkbox" className="rounded border-neutral-200 text-primary-base focus:ring-primary-base" />
             </div>
             <div className="flex items-center justify-between">
-              <label className="text-sm font-medium text-gray-700">GMP3</label>
-              <input type="checkbox" className="rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
+              <label className="text-sm font-medium text-neutral-700">GMP3</label>
+              <input type="checkbox" className="rounded border-neutral-200 text-primary-base focus:ring-primary-base" />
             </div>
             <div className="flex items-center justify-between">
-              <label className="text-sm font-medium text-gray-700">Simpra Link</label>
-              <input type="checkbox" className="rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
+              <label className="text-sm font-medium text-neutral-700">Simpra Link</label>
+              <input type="checkbox" className="rounded border-neutral-200 text-primary-base focus:ring-primary-base" />
             </div>
             <div className="flex items-center justify-between">
-              <label className="text-sm font-medium text-gray-700">Offer4</label>
-              <input type="checkbox" className="rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
+              <label className="text-sm font-medium text-neutral-700">Offer4</label>
+              <input type="checkbox" className="rounded border-neutral-200 text-primary-base focus:ring-primary-base" />
             </div>
           </div>
         </div>
         
-        <div className="bg-white p-6 rounded-lg shadow-sm border">
-          <h3 className="text-lg font-medium text-gray-900 mb-4">C&P Entegrasyonu</h3>
+        <div className="bg-neutral-25 p-6 rounded-lg shadow-sm border border-neutral-100">
+          <h3 className="text-lg font-medium text-neutral-900 mb-4">C&P Entegrasyonu</h3>
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">API Endpoint</label>
-              <input type="text" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="https://api.cp.com/v1" />
+              <label className="block text-sm font-medium text-neutral-700 mb-2">API Endpoint</label>
+              <input type="text" className="input-field" placeholder="https://api.cp.com/v1" />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">API Key</label>
-              <input type="password" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="••••••••••••••••" />
+              <label className="block text-sm font-medium text-neutral-700 mb-2">API Key</label>
+              <input type="password" className="input-field" placeholder="••••••••••••••••" />
             </div>
             <div className="flex items-center justify-between">
-              <label className="text-sm font-medium text-gray-700">Otomatik Senkronizasyon</label>
-              <input type="checkbox" className="rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
+              <label className="text-sm font-medium text-neutral-700">Otomatik Senkronizasyon</label>
+              <input type="checkbox" className="rounded border-neutral-200 text-primary-base focus:ring-primary-base" />
             </div>
           </div>
         </div>
@@ -89,62 +89,62 @@ const ProductConfig: React.FC<ProductConfigProps> = ({
     <div className="space-y-6">
       <div className="flex justify-between items-center">
         <div>
-          <h2 className="text-2xl font-bold text-gray-900">QR MENU - QR Temel Ayarları</h2>
-          <p className="text-sm text-gray-600">
+          <h2 className="text-2xl font-bold text-neutral-900">QR MENU - QR Temel Ayarları</h2>
+          <p className="text-sm text-neutral-600">
             {getCurrentTenant(selectedTenant)?.name} {'>'} {getCurrentBranch(selectedTenant, selectedBranch)?.name} {'>'} {getCurrentRVC(selectedTenant, selectedBranch, selectedRVC)?.name} (RVC Based)
           </p>
         </div>
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+        <button className="btn-primary">
           <Save size={16} className="mr-2 inline" />
           Ayarları Kaydet
         </button>
       </div>
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div className="bg-white p-6 rounded-lg shadow-sm border">
-          <h3 className="text-lg font-medium text-gray-900 mb-4">Temel Ayarlar</h3>
+        <div className="bg-neutral-25 p-6 rounded-lg shadow-sm border border-neutral-100">
+          <h3 className="text-lg font-medium text-neutral-900 mb-4">Temel Ayarlar</h3>
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Restoran Adı</label>
-              <input type="text" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="Restoran Adı" />
+              <label className="block text-sm font-medium text-neutral-700 mb-2">Restoran Adı</label>
+              <input type="text" className="input-field" placeholder="Restoran Adı" />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Restoran Açıklaması</label>
-              <textarea className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" rows={3} placeholder="Restoran açıklaması..."></textarea>
+              <label className="block text-sm font-medium text-neutral-700 mb-2">Restoran Açıklaması</label>
+              <textarea className="input-field" rows={3} placeholder="Restoran açıklaması..."></textarea>
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">QR URL</label>
-              <input type="url" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="https://qr.menu.com/..." />
+              <label className="block text-sm font-medium text-neutral-700 mb-2">QR URL</label>
+              <input type="url" className="input-field" placeholder="https://qr.menu.com/..." />
             </div>
             <div className="flex items-center justify-between">
-              <label className="text-sm font-medium text-gray-700">Para Birimi Gösterimi</label>
-              <input type="checkbox" className="rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
+              <label className="text-sm font-medium text-neutral-700">Para Birimi Gösterimi</label>
+              <input type="checkbox" className="rounded border-neutral-200 text-primary-base focus:ring-primary-base" />
             </div>
           </div>
         </div>
         
-        <div className="bg-white p-6 rounded-lg shadow-sm border">
-          <h3 className="text-lg font-medium text-gray-900 mb-4">Görsel Ayarlar</h3>
+        <div className="bg-neutral-25 p-6 rounded-lg shadow-sm border border-neutral-100">
+          <h3 className="text-lg font-medium text-neutral-900 mb-4">Görsel Ayarlar</h3>
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Restoran Logo</label>
-              <div className="border-2 border-dashed border-gray-300 rounded-lg p-4 text-center">
-                <Image size={24} className="mx-auto text-gray-400 mb-2" />
-                <p className="text-sm text-gray-600">Logo yüklemek için tıklayın</p>
+              <label className="block text-sm font-medium text-neutral-700 mb-2">Restoran Logo</label>
+              <div className="border-2 border-dashed border-neutral-200 rounded-lg p-4 text-center">
+                <Image size={24} className="mx-auto text-neutral-400 mb-2" />
+                <p className="text-sm text-neutral-600">Logo yüklemek için tıklayın</p>
               </div>
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Kategori Görseli</label>
-              <div className="border-2 border-dashed border-gray-300 rounded-lg p-4 text-center">
-                <Image size={24} className="mx-auto text-gray-400 mb-2" />
-                <p className="text-sm text-gray-600">Görsel yüklemek için tıklayın</p>
+              <label className="block text-sm font-medium text-neutral-700 mb-2">Kategori Görseli</label>
+              <div className="border-2 border-dashed border-neutral-200 rounded-lg p-4 text-center">
+                <Image size={24} className="mx-auto text-neutral-400 mb-2" />
+                <p className="text-sm text-neutral-600">Görsel yüklemek için tıklayın</p>
               </div>
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Afiş Görseli</label>
-              <div className="border-2 border-dashed border-gray-300 rounded-lg p-4 text-center">
-                <Image size={24} className="mx-auto text-gray-400 mb-2" />
-                <p className="text-sm text-gray-600">Afiş yüklemek için tıklayın</p>
+              <label className="block text-sm font-medium text-neutral-700 mb-2">Afiş Görseli</label>
+              <div className="border-2 border-dashed border-neutral-200 rounded-lg p-4 text-center">
+                <Image size={24} className="mx-auto text-neutral-400 mb-2" />
+                <p className="text-sm text-neutral-600">Afiş yüklemek için tıklayın</p>
               </div>
             </div>
           </div>
@@ -157,64 +157,64 @@ const ProductConfig: React.FC<ProductConfigProps> = ({
     <div className="space-y-6">
       <div className="flex justify-between items-center">
         <div>
-          <h2 className="text-2xl font-bold text-gray-900">KIOSK - Kiosk Temel Ayarları</h2>
-          <p className="text-sm text-gray-600">
+          <h2 className="text-2xl font-bold text-neutral-900">KIOSK - Kiosk Temel Ayarları</h2>
+          <p className="text-sm text-neutral-600">
             {getCurrentTenant(selectedTenant)?.name} {'>'} {getCurrentBranch(selectedTenant, selectedBranch)?.name} {'>'} {getCurrentRVC(selectedTenant, selectedBranch, selectedRVC)?.name} (RVC Based)
           </p>
         </div>
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+        <button className="btn-primary">
           <Save size={16} className="mr-2 inline" />
           Ayarları Kaydet
         </button>
       </div>
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div className="bg-white p-6 rounded-lg shadow-sm border">
-          <h3 className="text-lg font-medium text-gray-900 mb-4">Temel Ayarlar</h3>
+        <div className="bg-neutral-25 p-6 rounded-lg shadow-sm border border-neutral-100">
+          <h3 className="text-lg font-medium text-neutral-900 mb-4">Temel Ayarlar</h3>
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Varsayılan Dil</label>
-              <select className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <label className="block text-sm font-medium text-neutral-700 mb-2">Varsayılan Dil</label>
+              <select className="input-field">
                 <option>Türkçe</option>
                 <option>English</option>
                 <option>Deutsch</option>
               </select>
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Çalışan ID</label>
-              <input type="text" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="EMP001" />
+              <label className="block text-sm font-medium text-neutral-700 mb-2">Çalışan ID</label>
+              <input type="text" className="input-field" placeholder="EMP001" />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Çalışan Pin</label>
-              <input type="password" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="••••" />
+              <label className="block text-sm font-medium text-neutral-700 mb-2">Çalışan Pin</label>
+              <input type="password" className="input-field" placeholder="••••" />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Zaman Aşımı Süresi (dk)</label>
-              <input type="number" className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" placeholder="30" />
+              <label className="block text-sm font-medium text-neutral-700 mb-2">Zaman Aşımı Süresi (dk)</label>
+              <input type="number" className="input-field" placeholder="30" />
             </div>
           </div>
         </div>
         
-        <div className="bg-white p-6 rounded-lg shadow-sm border">
-          <h3 className="text-lg font-medium text-gray-900 mb-4">Görsel Ayarlar</h3>
+        <div className="bg-neutral-25 p-6 rounded-lg shadow-sm border border-neutral-100">
+          <h3 className="text-lg font-medium text-neutral-900 mb-4">Görsel Ayarlar</h3>
           <div className="space-y-4">
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">İşletme Logo</label>
-              <div className="border-2 border-dashed border-gray-300 rounded-lg p-4 text-center">
-                <Image size={24} className="mx-auto text-gray-400 mb-2" />
-                <p className="text-sm text-gray-600">Logo yüklemek için tıklayın</p>
+              <label className="block text-sm font-medium text-neutral-700 mb-2">İşletme Logo</label>
+              <div className="border-2 border-dashed border-neutral-200 rounded-lg p-4 text-center">
+                <Image size={24} className="mx-auto text-neutral-400 mb-2" />
+                <p className="text-sm text-neutral-600">Logo yüklemek için tıklayın</p>
               </div>
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Anasayfa Logo</label>
-              <div className="border-2 border-dashed border-gray-300 rounded-lg p-4 text-center">
-                <Image size={24} className="mx-auto text-gray-400 mb-2" />
-                <p className="text-sm text-gray-600">Logo yüklemek için tıklayın</p>
+              <label className="block text-sm font-medium text-neutral-700 mb-2">Anasayfa Logo</label>
+              <div className="border-2 border-dashed border-neutral-200 rounded-lg p-4 text-center">
+                <Image size={24} className="mx-auto text-neutral-400 mb-2" />
+                <p className="text-sm text-neutral-600">Logo yüklemek için tıklayın</p>
               </div>
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Menü Rengi</label>
-              <input type="color" className="w-full h-10 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500" />
+              <label className="block text-sm font-medium text-neutral-700 mb-2">Menü Rengi</label>
+              <input type="color" className="w-full h-10 border border-neutral-200 rounded-lg focus:outline-none focus:ring-2 focus:ring-primary-base" />
             </div>
           </div>
         </div>
@@ -226,36 +226,36 @@ const ProductConfig: React.FC<ProductConfigProps> = ({
     <div className="space-y-6">
       <div className="flex justify-between items-center">
         <div>
-          <h2 className="text-2xl font-bold text-gray-900">Masa Yönetimi</h2>
-          <p className="text-sm text-gray-600">
+          <h2 className="text-2xl font-bold text-neutral-900">Masa Yönetimi</h2>
+          <p className="text-sm text-neutral-600">
             {getCurrentTenant(selectedTenant)?.name} {'>'} {getCurrentBranch(selectedTenant, selectedBranch)?.name} {'>'} {getCurrentRVC(selectedTenant, selectedBranch, selectedRVC)?.name}
           </p>
         </div>
-        <button className="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">
+        <button className="btn-primary">
           <Save size={16} className="mr-2 inline" />
           Ayarları Kaydet
         </button>
       </div>
       
       <div className="grid grid-cols-1 lg:grid-cols-2 gap-6">
-        <div className="bg-white p-6 rounded-lg shadow-sm border">
-          <h3 className="text-lg font-medium text-gray-900 mb-4">Masa Ayarları</h3>
+        <div className="bg-neutral-25 p-6 rounded-lg shadow-sm border border-neutral-100">
+          <h3 className="text-lg font-medium text-neutral-900 mb-4">Masa Ayarları</h3>
           <div className="space-y-4">
             <div className="flex items-center justify-between">
-              <label className="text-sm font-medium text-gray-700">Masaya 1'den fazla çek açma</label>
-              <input type="checkbox" className="rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
+              <label className="text-sm font-medium text-neutral-700">Masaya 1'den fazla çek açma</label>
+              <input type="checkbox" className="rounded border-neutral-200 text-primary-base focus:ring-primary-base" />
             </div>
             <div className="flex items-center justify-between">
-              <label className="text-sm font-medium text-gray-700">Çeke isim gir</label>
-              <input type="checkbox" className="rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
+              <label className="text-sm font-medium text-neutral-700">Çeke isim gir</label>
+              <input type="checkbox" className="rounded border-neutral-200 text-primary-base focus:ring-primary-base" />
             </div>
             <div className="flex items-center justify-between">
-              <label className="text-sm font-medium text-gray-700">Koltuk (Seat) Girişi</label>
-              <input type="checkbox" className="rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
+              <label className="text-sm font-medium text-neutral-700">Koltuk (Seat) Girişi</label>
+              <input type="checkbox" className="rounded border-neutral-200 text-primary-base focus:ring-primary-base" />
             </div>
             <div>
-              <label className="block text-sm font-medium text-gray-700 mb-2">Gelir Merkezi Yazıcı</label>
-              <select className="w-full px-3 py-2 border rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <label className="block text-sm font-medium text-neutral-700 mb-2">Gelir Merkezi Yazıcı</label>
+              <select className="input-field">
                 <option>Mutfak Yazıcısı</option>
                 <option>Bar Yazıcısı</option>
                 <option>Kasa Yazıcısı</option>
@@ -264,28 +264,28 @@ const ProductConfig: React.FC<ProductConfigProps> = ({
           </div>
         </div>
         
-        <div className="bg-white p-6 rounded-lg shadow-sm border">
-          <h3 className="text-lg font-medium text-gray-900 mb-4">Gelir Merkezi Özellikler</h3>
+        <div className="bg-neutral-25 p-6 rounded-lg shadow-sm border border-neutral-100">
+          <h3 className="text-lg font-medium text-neutral-900 mb-4">Gelir Merkezi Özellikler</h3>
           <div className="space-y-4">
             <div className="flex items-center justify-between">
-              <label className="text-sm font-medium text-gray-700">Ürün Öneri</label>
-              <input type="checkbox" className="rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
+              <label className="text-sm font-medium text-neutral-700">Ürün Öneri</label>
+              <input type="checkbox" className="rounded border-neutral-200 text-primary-base focus:ring-primary-base" />
             </div>
             <div className="flex items-center justify-between">
-              <label className="text-sm font-medium text-gray-700">Favori Ürünler</label>
-              <input type="checkbox" className="rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
+              <label className="text-sm font-medium text-neutral-700">Favori Ürünler</label>
+              <input type="checkbox" className="rounded border-neutral-200 text-primary-base focus:ring-primary-base" />
             </div>
             <div className="flex items-center justify-between">
-              <label className="text-sm font-medium text-gray-700">Çoklu Para Birimi</label>
-              <input type="checkbox" className="rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
+              <label className="text-sm font-medium text-neutral-700">Çoklu Para Birimi</label>
+              <input type="checkbox" className="rounded border-neutral-200 text-primary-base focus:ring-primary-base" />
             </div>
             <div className="flex items-center justify-between">
-              <label className="text-sm font-medium text-gray-700">Çoklu Sipariş Gönderme</label>
-              <input type="checkbox" className="rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
+              <label className="text-sm font-medium text-neutral-700">Çoklu Sipariş Gönderme</label>
+              <input type="checkbox" className="rounded border-neutral-200 text-primary-base focus:ring-primary-base" />
             </div>
             <div className="flex items-center justify-between">
-              <label className="text-sm font-medium text-gray-700">Otomatik Kullanıcı Çıkışı</label>
-              <input type="checkbox" className="rounded border-gray-300 text-blue-600 focus:ring-blue-500" />
+              <label className="text-sm font-medium text-neutral-700">Otomatik Kullanıcı Çıkışı</label>
+              <input type="checkbox" className="rounded border-neutral-200 text-primary-base focus:ring-primary-base" />
             </div>
           </div>
         </div>
@@ -304,9 +304,9 @@ const ProductConfig: React.FC<ProductConfigProps> = ({
       return renderTableSettings();
     default:
       return (
-        <div className="bg-white p-6 rounded-lg shadow-sm border">
-          <h2 className="text-2xl font-bold text-gray-900 mb-4">Ürün Yapılandırması</h2>
-          <p className="text-gray-600">Bu sayfa henüz geliştirilme aşamasında.</p>
+        <div className="bg-neutral-25 p-6 rounded-lg shadow-sm border border-neutral-100">
+          <h2 className="text-2xl font-bold text-neutral-900 mb-4">Ürün Yapılandırması</h2>
+          <p className="text-neutral-600">Bu sayfa henüz geliştirilme aşamasında.</p>
         </div>
       );
   }

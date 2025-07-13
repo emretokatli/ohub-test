@@ -74,19 +74,19 @@ const Content: React.FC<ContentProps> = ({
       // WaiterApp - 2 sekmeli pencere
       case 'waiterapp':
         return (
-          <div className="bg-white rounded-lg shadow-sm border">
-            <div className="p-6 border-b">
-              <h2 className="text-xl font-semibold text-gray-900">WaiterApp Yapılandırması</h2>
-              <p className="text-gray-600 mt-1">Tenant: {getCurrentTenant(selectedTenant)?.name}</p>
+          <div className="bg-neutral-25 rounded-lg shadow-sm border border-neutral-100">
+            <div className="p-6 border-b border-neutral-100">
+              <h2 className="text-xl font-semibold text-neutral-900">WaiterApp Yapılandırması</h2>
+              <p className="text-neutral-600 mt-1">Tenant: {getCurrentTenant(selectedTenant)?.name}</p>
             </div>
             <div className="p-6">
               {/* Tab Navigation */}
-              <div className="flex space-x-1 bg-gray-100 p-1 rounded-lg">
+              <div className="flex space-x-1 bg-neutral-100 p-1 rounded-lg">
                 <button
                   className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
                     activeProductTab === 'branch-settings'
-                      ? 'bg-white text-gray-900 shadow-sm'
-                      : 'text-gray-600 hover:text-gray-900'
+                      ? 'bg-neutral-25 text-neutral-900 shadow-sm'
+                      : 'text-neutral-600 hover:text-neutral-900'
                   }`}
                   onClick={() => setActiveProductTab('branch-settings')}
                 >
@@ -95,8 +95,8 @@ const Content: React.FC<ContentProps> = ({
                 <button
                   className={`px-4 py-2 rounded-md text-sm font-medium transition-colors ${
                     activeProductTab === 'rvc-settings'
-                      ? 'bg-white text-gray-900 shadow-sm'
-                      : 'text-gray-600 hover:text-gray-900'
+                      ? 'bg-neutral-25 text-neutral-900 shadow-sm'
+                      : 'text-neutral-600 hover:text-neutral-900'
                   }`}
                   onClick={() => setActiveProductTab('rvc-settings')}
                 >
@@ -108,10 +108,10 @@ const Content: React.FC<ContentProps> = ({
               {activeProductTab === 'branch-settings' && (
                 <div className="space-y-6">
                   {/* Branch Selection */}
-                  <div className="p-4 border rounded-lg">
-                    <h3 className="font-medium text-gray-900 mb-3">Şube Seçimi</h3>
+                  <div className="p-4 border border-neutral-100 rounded-lg">
+                    <h3 className="font-medium text-neutral-900 mb-3">Şube Seçimi</h3>
                     <select 
-                      className="w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-blue-500"
+                      className="input-field"
                       value={selectedBranchForSettings}
                       onChange={(e) => setSelectedBranchForSettings(e.target.value)}
                     >
@@ -127,25 +127,25 @@ const Content: React.FC<ContentProps> = ({
                     <div className="space-y-6">
                       <div className="space-y-4">
                         <button
-                          className="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors group"
+                          className="flex items-center justify-between p-4 border border-neutral-100 rounded-lg hover:bg-neutral-50 transition-colors group"
                           onClick={() => openPanel('Ödeme Ayarları')}
                         >
-                          <span className="font-medium text-gray-900">Ödeme Ayarları</span>
-                          <ArrowRight size={20} className="text-gray-400 group-hover:text-gray-600 transition-colors" />
+                          <span className="font-medium text-neutral-900">Ödeme Ayarları</span>
+                          <ArrowRight size={20} className="text-neutral-400 group-hover:text-neutral-600 transition-colors" />
                         </button>
                         <button
-                          className="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors group"
+                          className="flex items-center justify-between p-4 border border-neutral-100 rounded-lg hover:bg-neutral-50 transition-colors group"
                           onClick={() => openPanel('C&P Entegrasyonu')}
                         >
-                          <span className="font-medium text-gray-900">C&P Entegrasyonu</span>
-                          <ArrowRight size={20} className="text-gray-400 group-hover:text-gray-600 transition-colors" />
+                          <span className="font-medium text-neutral-900">C&P Entegrasyonu</span>
+                          <ArrowRight size={20} className="text-neutral-400 group-hover:text-neutral-600 transition-colors" />
                         </button>
                         <button
-                          className="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors group"
+                          className="flex items-center justify-between p-4 border border-neutral-100 rounded-lg hover:bg-neutral-50 transition-colors group"
                           onClick={() => openPanel('Yazıcı Yapılandırma')}
                         >
-                          <span className="font-medium text-gray-900">Yazıcı Yapılandırma</span>
-                          <ArrowRight size={20} className="text-gray-400 group-hover:text-gray-600 transition-colors" />
+                          <span className="font-medium text-neutral-900">Yazıcı Yapılandırma</span>
+                          <ArrowRight size={20} className="text-neutral-400 group-hover:text-neutral-600 transition-colors" />
                         </button>
                       </div>
                     </div>
@@ -198,25 +198,25 @@ const Content: React.FC<ContentProps> = ({
                     <div className="space-y-6">
                       <div className="space-y-4">
                         <button
-                          className="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors group"
+                          className="flex items-center justify-between p-4 border border-neutral-100 rounded-lg hover:bg-neutral-50 transition-colors group"
                           onClick={() => openPanel('Genel Ayarlar')}
                         >
-                          <span className="font-medium text-gray-900">Genel Ayarlar</span>
-                          <ArrowRight size={20} className="text-gray-400 group-hover:text-gray-600 transition-colors" />
+                          <span className="font-medium text-neutral-900">Genel Ayarlar</span>
+                          <ArrowRight size={20} className="text-neutral-400 group-hover:text-neutral-600 transition-colors" />
                         </button>
                         <button
-                          className="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors group"
+                          className="flex items-center justify-between p-4 border border-neutral-100 rounded-lg hover:bg-neutral-50 transition-colors group"
                           onClick={() => openPanel('Masalar')}
                         >
-                          <span className="font-medium text-gray-900">Masalar</span>
-                          <ArrowRight size={20} className="text-gray-400 group-hover:text-gray-600 transition-colors" />
+                          <span className="font-medium text-neutral-900">Masalar</span>
+                          <ArrowRight size={20} className="text-neutral-400 group-hover:text-neutral-600 transition-colors" />
                         </button>
                         <button
-                          className="flex items-center justify-between p-4 border border-gray-200 rounded-lg hover:bg-gray-50 transition-colors group"
+                          className="flex items-center justify-between p-4 border border-neutral-100 rounded-lg hover:bg-neutral-50 transition-colors group"
                           onClick={() => openPanel('Masa Planı')}
                         >
-                          <span className="font-medium text-gray-900">Masa Planı</span>
-                          <ArrowRight size={20} className="text-gray-400 group-hover:text-gray-600 transition-colors" />
+                          <span className="font-medium text-neutral-900">Masa Planı</span>
+                          <ArrowRight size={20} className="text-neutral-400 group-hover:text-neutral-600 transition-colors" />
                         </button>
                       </div>
                     </div>

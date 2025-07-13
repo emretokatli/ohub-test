@@ -180,17 +180,17 @@ const Sidebar: React.FC<SidebarProps> = ({
   ];
 
   return (
-    <div className="w-64 bg-white shadow-sm border-r h-screen overflow-y-auto">
+    <div className="w-64 bg-neutral-25 shadow-sm border-r border-neutral-100 h-screen overflow-y-auto">
       <div className="p-4">
         <nav className="space-y-6">
           {/* Tenant Selector */}
           <div>
-            <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">
+            <h3 className="text-xs font-semibold text-neutral-500 uppercase tracking-wider mb-3">
               Aktif Tenant
             </h3>
             <div>
               <select 
-                className="w-full px-3 py-2 text-sm border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500"
+                className="input-field text-sm"
                 value={selectedTenant}
                 onChange={(e) => {
                   setSelectedTenant(e.target.value);
@@ -208,7 +208,7 @@ const Sidebar: React.FC<SidebarProps> = ({
 
           {/* Main Menu */}
           <div>
-            <h3 className="text-xs font-semibold text-gray-500 uppercase tracking-wider mb-3">
+            <h3 className="text-xs font-semibold text-neutral-500 uppercase tracking-wider mb-3">
               Ana Menü
             </h3>
             <div className="space-y-1">

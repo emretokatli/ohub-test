@@ -126,28 +126,21 @@ const Sidebar: React.FC<SidebarProps> = ({
     {
       key: 'users',
       label: 'Kullanıcılar',
-      icon: Users,
-      children: [
-        { key: 'user-list', label: 'Kullanıcı Listesi', icon: Users },
-        { key: 'add-user', label: 'Kullanıcı Ekle', icon: Users }
-      ]
+      icon: Users
     },
     {
       key: 'user-roles',
       label: 'Kullanıcı Rolleri',
-      icon: Shield,
-      children: [
-        { key: 'role-list', label: 'Rol Listesi', icon: Shield },
-        { key: 'add-role', label: 'Rol Ekle', icon: Shield }
-      ]
+      icon: Shield
     },
     {
       key: 'audit-log',
       label: 'Denetim Günlüğü',
       icon: Activity,
       children: [
-        { key: 'audit-list', label: 'Günlük Listesi', icon: Activity },
-        { key: 'audit-reports', label: 'Denetim Raporları', icon: FileText }
+        { key: 'audit-waiterapp', label: 'WaiterApp', icon: Smartphone },
+        { key: 'audit-qrmenu', label: 'QR Menü', icon: QrCode },
+        { key: 'audit-kiosk', label: 'Kiosk', icon: Monitor }
       ]
     },
     {
@@ -155,27 +148,20 @@ const Sidebar: React.FC<SidebarProps> = ({
       label: 'Versiyon Notları',
       icon: FileText,
       children: [
-        { key: 'version-list', label: 'Versiyon Listesi', icon: FileText },
-        { key: 'add-version', label: 'Versiyon Ekle', icon: FileText }
+        { key: 'version-waiterapp', label: 'WaiterApp', icon: Smartphone },
+        { key: 'version-qrmenu', label: 'QR Menü', icon: QrCode },
+        { key: 'version-kiosk', label: 'Kiosk', icon: Monitor }
       ]
     },
     {
       key: 'languages',
       label: 'Diller',
-      icon: Languages,
-      children: [
-        { key: 'language-list', label: 'Dil Listesi', icon: Languages },
-        { key: 'add-language', label: 'Dil Ekle', icon: Languages }
-      ]
+      icon: Languages
     },
     {
       key: 'translations',
       label: 'Çeviriler',
-      icon: Globe,
-      children: [
-        { key: 'translation-list', label: 'Çeviri Listesi', icon: Globe },
-        { key: 'add-translation', label: 'Çeviri Ekle', icon: Globe }
-      ]
+      icon: Globe
     }
   ];
 

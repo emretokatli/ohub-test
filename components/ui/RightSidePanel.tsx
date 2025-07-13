@@ -18,7 +18,7 @@ const RightSidePanel: React.FC<RightSidePanelProps> = ({ isOpen, onClose, title,
         onClick={onClose}
       />
       {/* Panel */}
-      <div className="ml-auto w-full max-w-xl h-full bg-white shadow-xl flex flex-col animate-slide-in-right relative">
+      <div className="ml-auto w-full max-w-4xl h-full bg-white shadow-xl flex flex-col animate-slide-in-right relative">
         <div className="flex items-center justify-between p-4 border-b">
           <h2 className="text-lg font-semibold text-gray-900">{title}</h2>
           <button
